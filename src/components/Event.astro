@@ -1,14 +1,14 @@
 ---
 import "../css/generel.css";
 import Button from "../components/Button.astro";
-const { image, alt, image2, alt2, headline, pris, text, variant } = Astro.props;
+const { image, alt, image2, alt2, headline, pris, text, variant, knapgoaway, textsize } = Astro.props;
 ---
 
 <div class="first_grid">
   <figure class="img_container">
     <img class={variant} src={image} alt={alt} />
   </figure>
-  <div class="text_box">
+  <div class={textsize}>
     <div class="order1">
       <img class="img_vin" src={image2} alt={alt2} />
       <h1>{headline}</h1>
@@ -17,7 +17,7 @@ const { image, alt, image2, alt2, headline, pris, text, variant } = Astro.props;
     <div class="order3">
       <p>{text}</p>
     </div>
-    <div class="knap"><Button text="BESTIL NU" /></div>
+    <div class={knapgoaway}><Button text="BESTIL NU" /></div>
   </div>
 </div>
 
@@ -26,6 +26,9 @@ const { image, alt, image2, alt2, headline, pris, text, variant } = Astro.props;
     aspect-ratio: 610/662;
     height: auto;
     width: 100%;
+  }
+  .displaynone {
+    display: none;
   }
   .picnic {
     aspect-ratio: 552/610;
@@ -37,6 +40,10 @@ const { image, alt, image2, alt2, headline, pris, text, variant } = Astro.props;
   }
   figure.img_container {
     align-self: center;
+  }
+
+  figure.picnic_container {
+    align-self: end;
   }
 
   .img_vin {
@@ -53,6 +60,9 @@ const { image, alt, image2, alt2, headline, pris, text, variant } = Astro.props;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+  .text_box2 {
+    align-items: end;
   }
   .knap {
     margin: 20px 0 40px 0;
