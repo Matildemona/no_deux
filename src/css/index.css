@@ -177,7 +177,6 @@ figure.blad_left {
 }
 
 /* ----------pc---------- */
-<<<<<<< HEAD
 @media (max-width: 1200px) {
   .om_nodeux_b1 {
     margin-bottom: 30px;
@@ -197,11 +196,15 @@ figure.blad_left {
     max-width: 90%;
     margin: auto;
   }
-=======
-@media (max-width: 500px) {
->>>>>>> master
+  .fransk_menu {
+    max-width: 90%;
+    margin: auto;
+  }
   .om_nodeux_b2 img {
     margin-top: 50px;
+  }
+  .om_nodeux_b2 {
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
