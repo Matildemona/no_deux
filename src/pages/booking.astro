@@ -15,7 +15,7 @@ import Picnic_card from "../components/Picnic_card.astro";
     <meta name="description" content="book dit bord her" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <!-- <meta name="robots" content="noindex" /> -->
+    <meta name="robots" content="noindex" />
     <title>No Deux' book dit bord</title>
     <Favicon />
     <link rel="preload" as="font" />
@@ -34,30 +34,11 @@ import Picnic_card from "../components/Picnic_card.astro";
         </div>
         <div class="booking_tilbud">
           <Nyhed_card image="/webp/bord_reservation.webp" alt="Reservation" headline="Reservation" text="Book dit bord her til en hyggelig aften hos No Deux." knap="Book dit bord" />
-          <Nyhed_card
-            image="/webp/window_seat.webp"
-            alt="nyd udsigten ud over det travle københavn fra vores vindues pladser"
-            headline="Ved Vinduet"
-            text="Book et bord på vores dejlige højbord i vinduet, med udsigt til det travle København."
-            knap="Book dit bord"
-          />
-          <Nyhed_card
-            image="/webp/latenight1.webp"
-            alt="sen aften reservation"
-            headline="Sen aften"
-            text="Book en sen reservation og få et særlig tilbud, hvor du får et glas champagne, hovedret & dessert. Det hele koster kun 245,-"
-            knap="Book dit bord"
-          />
+          <Nyhed_card image="/webp/window_seat.webp" alt="nyd udsigten ud over det travle københavn fra vores vindues pladser" headline="Ved Vinduet" text="Book et bord på vores dejlige højbord i vinduet, med udsigt til det travle København." knap="Book dit bord" />
+          <Nyhed_card image="/webp/latenight1.webp" alt="sen aften reservation" headline="Sen aften" text="Book en sen reservation og få et særlig tilbud, hvor du får et glas champagne, hovedret & dessert. Det hele koster kun 245,-" knap="Book dit bord" />
         </div>
         <div class="event_booking">
-          <Picnic_card
-            image="/webp/vinsmagning_card.webp"
-            alt="Vinsmagning"
-            headline="Vinsmagning"
-            pris="250,-"
-            text="Kom til vinsmagning i vores hyggelige bistro. Vores vin connoisseur vil byde på både rødt, hvidt og moserende, ledsaget af lækre oste og kiks fra køkkenet."
-            knap="BESTIL NU"
-          />
+          <Picnic_card image="/webp/vinsmagning_card.webp" alt="Vinsmagning" headline="Vinsmagning" pris="250,-" text="Kom til vinsmagning i vores hyggelige bistro. Vores vin connoisseur vil byde på både rødt, hvidt og moserende, ledsaget af lækre oste og kiks fra køkkenet." knap="BESTIL NU" />
           <Picnic_card
             image="/webp/picnic_card.webp"
             alt="picnic"
